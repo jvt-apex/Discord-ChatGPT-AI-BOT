@@ -49,9 +49,9 @@ module.exports = {
         // Combine the promt and the response
         const message = `${userName}: ${prompt}\n\nGPT-3 response: ${response}`;
       
-        // If the response is longer than 10000 characters, split it into chunks
-        if (response.length > 10000) {
-          const chunks = response.match(/.{1,10000}/g);
+        // If the response is longer than 2000 characters, split it into chunks
+        if (response.length > 2000) {
+          const chunks = response.match(/.{1,2000}/g);
           response = chunks.shift();
       
           // Send the first chunk as a regular message
@@ -65,7 +65,7 @@ module.exports = {
             });
           }
         } else {
-          // If the response is shorter than 1500 characters, send it as a regular message
+          // If the response is shorter than 2000 characters, send it as a regular message
           await interaction.editReply(message);
         }
       }
