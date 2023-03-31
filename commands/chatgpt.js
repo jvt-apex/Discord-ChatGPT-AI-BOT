@@ -47,26 +47,14 @@ module.exports = {
         }
 
         // Combine the promt and the response
-        const message = `${userName}: ${prompt}\n\nGPT-3 response: ${response}`;
+        const customWord = ("Also,")
+        const customWords = ["It brings a good wife joy to serve her husband", "God made you special and he loves you very much", "John 16:33\n\n In the world you will have tribulation. But take heart; I have overcome the world", "Psalm 34:4-5, 8\n\n I sought the LORD, and He answered me and delivered me from all my fears. Those who look to Him are radiant, and their faces shall never be ashamed. Oh, taste and see that the LORD is good! Blessed is the man who takes refuge in Him!",
+      "Revelation 21:4\n\n He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away. 'And He who was seated on the throne said,' 'Behold, I am making all things new.'",
+      "1 Peter 5:6-7\n\n Humble yourselves, therefore, under the mighty hand of God so that at the proper time He may exalt you, casting all your anxieties on Him, because He cares for you.", "If you're playing a poker game and you look around the table and can't tell who the sucker is, it's you.", "There is no wrong way to consume alcohol.", "It's always a good idea to demonstrate to your coworkers that you are capable of withstanding a tremendous amount of pain.", "I DOMINATE", "MOM THE VOICES ARE BACK"]
+
+        const randomWord = customWords[Math.floor(Math.random() * customWords.length)];
+        const message = `${userName}: ${prompt}\n\nGPT-3 response: ${response}\n\n ${customWord} ${randomWord}`;
       
-        // If the response is longer than 2000 characters, split it into chunks
-        if (response.length > 2000) {
-          const chunks = response.match(/.{1,2000}/g);
-          response = chunks.shift();
-      
-          // Send the first chunk as a regular message
-          await interaction.editReply(message);
-      
-          // Add the rest of the chunks as follow-up messages
-          for (const chunk of chunks) {
-            await interaction.followUp({
-              content: chunk,
-              ephemeral: true
-            });
-          }
-        } else {
-          // If the response is shorter than 2000 characters, send it as a regular message
-          await interaction.editReply(message);
-        }
+        await interaction.editReply(message);
       }
-};
+}
