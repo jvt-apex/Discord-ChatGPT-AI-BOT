@@ -31,7 +31,7 @@ I'll list out all of the dependacies below, but two things that I want to highli
 
 ## Help
 
-You should be able to copy and paste my code verbatum to get the functionality of what it's designed for, which is given in the [Description](#Description). But things to take note of that may cause problems are as follows:
+You should be able to copy and paste my code verbatum to get the functionality of what it's designed for, which is given in the [Description](Description). But things to take note of that may cause problems are as follows:
 
   -Exceeding the Token Amount causing your OpenAI API call to fail
     If that's the case you will most likely want to add funding to your account.
