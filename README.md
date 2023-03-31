@@ -46,7 +46,7 @@ You should be able to copy and paste my code verbatum to get the functionality o
     - For people who know what they're doing, this is basic stuff. But for learners, the way you're making your calls will be defined in your code. If your files aren't at the right levels, the calls won't be able to find your folders, or files.
   
 ## Authors
-  Just me! If you have questions you can[Email me](mailto:jvantimmeren845@gmail.com)
+  Just me! If you have questions you can [Email me](mailto:jvantimmeren845@gmail.com)
   
 ## Version History
 
