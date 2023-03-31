@@ -34,16 +34,16 @@ I'll list out all of the dependacies below, but two things that I want to highli
 You should be able to copy and paste my code verbatum to get the functionality of what it's designed for, which is given in the [Description](#Description). But things to take note of that may cause problems are as follows:
 
   - Exceeding the Token Amount causing your OpenAI API call to fail
-  - If that's the case you will most likely want to add funding to your account.
+    - If that's the case you will most likely want to add funding to your account.
   
   - OpenAI API call taking longer than 3 seconds 
-  - This is the max amount of time that Discord will wait to receive a response. If it doesn't receive it within that time, it believes that the service isn't work, and it kills the process. To counter act this, if you reference my code, **`await interaction.deferReply();`** The Defer keyword delays the execution of a function until the surrounding function returns.
+    - This is the max amount of time that Discord will wait to receive a response. If it doesn't receive it within that time, it believes that the service isn't work, and it kills the process. To counter act this, if you reference my code, **`await interaction.deferReply();`** The Defer keyword delays the execution of a function until the surrounding function returns.
   
   - Up to date version of `Discord.js`
-  - **I cannot stress this enough. If you have old packages installed, or are not using upto date Objects that will lead to serious errors.**
+    - **I cannot stress this enough. If you have old packages installed, or are not using upto date Objects that will lead to serious errors.**
   
   - File structure
-  - For people who know what they're doing, this is basic stuff. But for learners, the way you're making your calls will be defined in your code. If your files aren't at the right levels, the calls won't be able to find your folders, or files.
+    - For people who know what they're doing, this is basic stuff. But for learners, the way you're making your calls will be defined in your code. If your files aren't at the right levels, the calls won't be able to find your folders, or files.
   
 ## Authors
   Just me! If you have questions you can[Email me](mailto:jvantimmeren845@gmail.com)
@@ -55,6 +55,7 @@ You should be able to copy and paste my code verbatum to get the functionality o
 
 ## Acknowlegements 
   [Joshua Aragon](https://www.youtube.com/watch?v=dttj_p4sUKI&t=151s)
+ 
   [Adrian Twarog](https://www.youtube.com/watch?v=roMykVsig-A)
   
   And so many other websites, posts, help questions, from all over the place that I would never be able to remember. Thank you!
