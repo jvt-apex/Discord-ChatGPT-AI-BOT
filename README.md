@@ -1,7 +1,7 @@
 # Discord-ChatGPT-AI-BOT v14 03/30/2023
 This is my fully built code (my first ever coding project with no prior experiance!) 
 
-## <a Description = Description a>
+## <a> Description=Description </a>
 
 This Bot was designed with the intented functionality of Chat-GPT model 'text-davinci-003'. This bot's functionality mirrors the same text model and reply functions as what you use in the browser version.
 
