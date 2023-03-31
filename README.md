@@ -27,7 +27,7 @@ I'll list out all of the dependacies below, but two things that I want to highli
 
 `2` **OpenAI
 
--First, you have to register for an account with OpenAI if you don't have one already. This is how you're going to get access to your API Token, and also your Organization Token. Secondly, you are probably going to want to add payment information because you get a preset amount of about 50 tokens per minute if I remember correctly. I saw that when I first started the project, but don't see any documentation at the moment. The problem is that 1000 tokens is roughly 750 English words. So if you set your token limit to 50, or leave it maxed out with the free account, that leaves you with about 13-15 words per minute. If you and your buddies are using this, that won't be enough. With the `text-davinci-003` version I'm using in the code, I've spent roughly $0.12 a day with my 5 buddies abusing it. Not bad.
+- First, you have to register for an account with OpenAI if you don't have one already. This is how you're going to get access to your API Token, and also your Organization Token. Secondly, you are probably going to want to add payment information because you get a preset amount of about 50 tokens per minute if I remember correctly. I saw that when I first started the project, but don't see any documentation at the moment. The problem is that 1000 tokens is roughly 750 English words. So if you set your token limit to 50, or leave it maxed out with the free account, that leaves you with about 13-15 words per minute. If you and your buddies are using this, that won't be enough. With the `text-davinci-003` version I'm using in the code, I've spent roughly $0.12 a day with my 5 buddies abusing it. Not bad.
 
 ## Help
 
